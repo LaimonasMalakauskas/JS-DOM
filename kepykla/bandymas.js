@@ -66,8 +66,14 @@ document.getElementById('order-count').addEventListener('keyup', function(event)
 document.getElementById('reset').addEventListener('click', function(){
   // console.log('clicked');
   document.getElementById('employee-count').value = 0;
+  document.getElementById('employee-count').classList.remove('error');
+  document.getElementById('employee-count').nextElementSibling.classList.remove('show');
   document.getElementById('loaves-per-employee').value = 0;
+  document.getElementById('loaves-per-employee').classList.remove('error');
+  document.getElementById('loaves-per-employee').nextElementSibling.classList.remove('show');
   document.getElementById('order-count').value = 0;
+  document.getElementById('order-count').classList.remove('error');
+  document.getElementById('order-count').nextElementSibling.classList.remove('show');
   document.getElementById('results').innerHTML = '<p>Kol kas nieko nėra.</p>';
 
 });
