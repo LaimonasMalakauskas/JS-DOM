@@ -34,11 +34,19 @@ h1, h2, h3, h4, h4, h5, h6 {
     padding:7px;
     border-style:solid;
     border-width:1px;
+    border-radius: 25px;
 }
 
 .info-wrapper button {
     cursor:pointer;
     padding:5px 10px;
+    border-radius: 25px;
+    border-color: burlywood;
+    background-color: bisque;
+}
+.info-wrapper button:hover {
+    color: white;
+    background-color:burlywood;
 }
 
 .info-wrapper .input-wrapper input.error {
